@@ -12,7 +12,7 @@ import random
 low, high = 1, 50
 
 x = random.randint(low, high)
-print(x)
+# print(x)
 
 for i in range(5):
     y = eval(input(f"請輸入一個數字{low}~{high}:"))
@@ -22,12 +22,16 @@ for i in range(5):
         break
     else:
         if y > x:
-            print("再低一點")
+            print(f"再低一點")
+            if y <= high:
+                high = y - 1
         else:
-            print("再高一點")
+            print(f"再高一點")
+            if y >= low:
+                low = y + 1
 
 if y != x:
-    print(f"答案為:{x}")
+    print(f"你輸了答案為:{x}")
 
 
 """while True:
