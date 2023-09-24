@@ -14,6 +14,9 @@ num = 10
 x = random.randint(low, high)
 print(x)
 
+level = 0
+print(f"新增等級測試{level}")
+
 for i in range(num):
     y = eval(input(f"{i+1}/{num}請輸入一個數字{low}~{high}:"))
 
