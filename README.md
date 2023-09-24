@@ -1,5 +1,3 @@
-# GIT-DEMO
-
 - 版本檢視
 	- git --version
 
@@ -141,7 +139,21 @@
 -git remote -v
 	-顯示目前連結的遠端倉庫
 -git push -u origin master
+	-從本地端推送到雲端
+	- git push -f 強推的意思
+	- git push --delete origin dev
+		- 刪除遠端分支的方法
+-git colen
+	- git clone https://github.com/PaulChenchi/git-demo
+	- 複製專案到本地端
+	- 本地端新增修正後
+		- git add .
+		- git commit -m "message"
+		- git push (確保雲端是最新版本)
 
+- git pull
+	- 從遠端同步到本地端
+		- 開啟專案第一步
 
 
 - echo "# git-demo" >> README.md
